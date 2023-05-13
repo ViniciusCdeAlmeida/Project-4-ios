@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     @IBAction func rollBtn(_ sender: UIButton) {
         let ramdonImg = [UIImage(imageLiteralResourceName: "DiceOne"),UIImage(imageLiteralResourceName: "DiceSix"),UIImage(imageLiteralResourceName: "DiceFive"),UIImage(imageLiteralResourceName: "DiceTwo"),UIImage(imageLiteralResourceName: "DiceThree"),UIImage(imageLiteralResourceName: "DiceFour"),]
-        diceImageFirst.image = ramdonImg.shuffle(using: &<#T##RandomNumberGenerator#>, )
+        diceImageFirst.image = ramdonImg.randomElement()
         
         diceImageSecond.image = ramdonImg.randomElement()
     }
